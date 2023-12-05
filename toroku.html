@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script><script src="hukuyaku.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+    </script>
+</head>
+<header>
+    <div class="hamburger-menu">
+        <input type="checkbox" id="menu-btn-check">
+        <label for="menu-btn-check" class="menu-btn"><span></span></label>
+        <!--ここからメニュー-->
+        <div class="menu-content">
+            <ul>
+                <li>
+                    <a href="suimin.html">睡眠計測</a>
+                </li>
+                <li>
+                    <a href="hosukei.html">歩数計</a>
+                </li>
+                <li>
+                    <a href="kondate.html">献立提案</a>
+                </li>
+                <li>
+                    <a href="hukuyaku.html">服薬アラーム</a>
+            </ul>
+        </div>
+        <!--ここまでメニュー-->
+    </div>
+</header>
+<body>
+    
+    <label for="alarmName">おくすり名：</label>
+    <input type="text" id="alarmName" placeholder="おくすり名を入力">
+
+    <label1 for="alarmTime">アラームの時刻：</label>
+    <input type="time" id="alarmTime">
+    
+    <button onclick="setAlarm()">アラームを設定</button>
+
+    <script>
+        function setAlarm() {
+            // アラームの設定内容を保存する処理
+            var alarmName = document.getElementById("alarmName").value;
+            var alarmTime = document.getElementById("alarmTime").value;
+
+            // 名前と時間を連結して保存
+            var fullAlarmDetails = alarmName + " - " + alarmTime;
+            localStorage.setItem("alarmDetails", fullAlarmDetails);
+
+            alert("アラームが設定されました：" + fullAlarmDetails);
+        }
+    </script>
+</body>
+</html>
