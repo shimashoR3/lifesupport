@@ -1,0 +1,462 @@
+/*indexのCSS*/
+body {
+    background-image: url("../haikei2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    color: black;
+    padding: 10px;
+}
+.absolute01{
+    position: absolute;
+    right: 190px;
+    bottom: 330px;
+}
+.absolute02{
+    position: absolute;
+    right: 5px;
+    bottom: 330px;
+}
+.absolute03{
+    position: absolute;
+    right: 190px;
+    bottom: 90px;
+}
+.absolute04{
+    position: absolute;
+    right: 5px;
+    bottom: 90px;
+}
+.absolute05{
+    color:#707070;
+    background-color: #F2F2F2;
+    box-shadow:0 2px  6px 0 rgba(0,0,0,0.16);
+    width:72px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    position: absolute;
+    right: 300px;
+    bottom: 80px;
+}
+.absolute06{
+    color:#707070;
+    background-color: #F2F2F2;
+    box-shadow:0 2px  6px 0 rgba(0,0,0,0.16);
+    width:72px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    position: absolute;
+    right: 300px;
+    bottom: 80px;
+}
+.absolute08{
+    color:#707070;
+    background-color: #F2F2F2;
+    box-shadow:0 2px  6px 0 rgba(0,0,0,0.16);
+    width:72px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    position: absolute;
+    right: 300px;
+    bottom: 80px;
+}
+/*メニューボタン*/
+.menu-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background-color: #ffffff;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #3C9491;
+    position: absolute;
+}
+.menu-btn span:before {
+    bottom: 8px;
+}
+.menu-btn span:after {
+    top: 8px;
+}
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+#menu-btn-check {
+    display: none;
+}
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 80;
+    background-color: #3C9491;
+}
+.menu-content ul {
+    padding: 70px 10px 0;
+}
+.menu-content ul li {
+    border-bottom: solid 1px #ffffff;
+    list-style: none;
+}
+.menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+    color:#ffffff;
+    text-decoration: none;
+    padding: 9px 15px 10px 0;
+    position: relative;
+}
+.menu-content ul li a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px #ffffff;
+    border-right: solid 2px #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 16px;
+}
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;/*leftの値を変更してメニューを画面外へ*/
+    z-index: 80;
+    background-color: #3C9491;
+    transition: all 0.5s;/*アニメーション設定*/
+}
+#menu-btn-check:checked ~ .menu-content {
+    left: 0;/*メニューを画面内へ*/
+}
+/*ここまで*/
+.absolute09{
+    position: absolute;
+    right: 49px;
+    bottom: 400px;
+}
+.absolute10{
+    position: absolute;
+    right: 49px;
+    bottom: 200px;
+}
+/*献立のCSS*/
+.absolute11{
+    position: absolute;
+    right: 55px;
+    bottom: 400px;
+}
+.absolute12{
+    position: absolute;
+    right: 55px;
+    bottom: 200px;
+}
+.absolute14{
+    position: absolute;
+    right: 55px;
+    bottom: 475px;
+}
+.absolute15{
+    position: absolute;
+    right: 55px;
+    bottom: 369px;
+}
+.absolute16{
+    position: absolute;
+    right: 55px;
+    bottom: 260px;
+}
+.absolute17{
+    position: absolute;
+    right: 55px;
+    bottom: 150px;
+}
+.absolute18{
+    position: absolute;
+    right: 55px;
+    bottom: 40px;
+}
+.absolute19{
+    position: absolute;
+    right: 55px;
+    bottom: 475px;
+}
+.absolute20{
+    position: absolute;
+    right: 55px;
+    bottom: 369px;
+}
+.absolute21{
+    position: absolute;
+    right: 55px;
+    bottom: 260px;
+}
+.absolute22{
+    position: absolute;
+    right: 55px;
+    bottom: 150px;
+}
+.absolute23{
+    position: absolute;
+    right: 55px;
+    bottom: 40px;
+}
+.zairyo{
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    padding: 0.5em;
+    color: #000000;
+    border-left: solid 5px #3C9491;
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+.zairyo1{
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    background: #F2F2F2;
+    font-family: sans-serif;
+}
+.sansho2{
+    position: absolute;
+    top: 1410px;
+    margin: 0% auto;
+    color: #000000;
+    background: #F2F2F2;
+    border-radius: 8px;
+    width: 98%;
+}
+.sansho1{
+    position: absolute;
+    top: 1080px;
+    margin: 0% auto;
+    color: #000000;
+    background: #F2F2F2;
+    border-radius: 8px;
+    width: 98%;
+}
+.sansho3{
+    position: absolute;
+    top: 1610px;
+    margin: 0% auto;
+    color: #000000;
+    background: #F2F2F2;
+    border-radius: 8px;
+    width: 98%;
+}
+.sansho{
+    position: absolute;
+    top: 1020px;
+    width: 100%;
+    padding: 00.5em;
+    color: black;
+    border-left: solid 5px #3C9491;
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+.sanshox{
+    position: absolute;
+    top: 1350px;
+    width: 100%;
+    padding: 00.5em;
+    color: black;
+    border-left: solid 5px #3C9491;
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+.sanshoz{
+    position: absolute;
+    top: 1570px;
+    width: 100%;
+    padding: 00.5em;
+    color: black;
+    border-left: solid 5px #3C9491;
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+.howto{
+    position: absolute;
+    top: 550px;
+    width: 100%;
+    padding: 0.5em;
+    color: #000000;
+    border-left: solid 5px #3C9491;
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+.howto1{
+    position: absolute;
+    top: 600px;
+    margin: 0 auto;
+    color: #000000;
+    background: #F2F2F2;
+    border-radius: 8px;
+    width: 98%;
+}
+.howto2{
+    position: absolute;
+    top: 600px;
+    margin: 0 auto;
+    color: #000000;
+    background: #F2F2F2;
+    border-radius: 8px;
+    width: 98%;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 共通のスタイル */
+h2 {
+    color: #333;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+/* 各セクションのスタイル */
+.sleep-section,
+.medication-section,
+.step-counter-section {
+    position: relative;
+    top: 70px;
+    padding: 70px;
+    margin: 70px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
+
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+label {
+    display: block;
+    margin-bottom: 17px;
+
+}
+label1 {
+    display: block;
+    margin-bottom: 12px;
+
+}
+input {
+    padding: 8px;
+    margin-bottom: 40px;
+
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 2px;
+}
+button1 {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 310px;
+    right: 90px;
+}
+button:hover {
+    background-color: #45a049;
+}
+
+#alarmData {
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+    position: absolute;
+    top: 70px;
+    right: 75px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+}
+#startButton {
+    background-color: #4caf50;
+    color: white;
+    margin-right: 200px;
+}
+
+#stopButton {
+    background-color: #f44336;
+    color: white;
+}
